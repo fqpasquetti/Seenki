@@ -1,3 +1,189 @@
----
-layout: front
----
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>teste</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="img/logo_white.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav_item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav_item">
+				<a class="nav-link" href="#projects">Projects</a>
+			</li>
+			<li class="nav_item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav_item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!-- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+	<li data-target="#slides" data-slide-to="0" class="active"></li>
+</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="img/header.png">
+		<div class="carousel-caption col-5">
+			<h1 class="display-2">Engineering Programming And Curiosity</h1>
+			<h3></h3>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+<!--- Cards --> 
+<div class="container-fluid padding" id="projects"> 
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">PROJECTS</h1>
+	</div>
+	<hr>
+</div>
+</div>
+
+<div class="container-fluid ">
+<div class="row ">
+	<a href="#" >
+	<div class="col-md-4">
+		<a href="#" >
+		<div class="card">
+			<img class="card-img-top" src="img/projeto1.png">
+			<div class="card-body">
+				<h4 class="card-title">Dinâmica de Estruturas Flutuantes</h4>
+				<p class="card-text"> Modelagem e Simulação da Dinâmica de Bóias Ancoradas sob efeito de ondas</p>
+				<p class="card-text"> ANSYS APDL and Excel </p>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>
+</div>
+
+
+
+<hr class="my-4">
+<!--- Fixed Background --> 
+<figure> 
+	<div class="fixed-wrap" id="about">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!--- Saiba Mais -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">Curriculum</button>
+<div id="emoji" class="collapse">
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="container-fluid padding">
+	<div class="row padding"> 
+		<div class="col-lg-6">
+			<img src="img/curriculo.jpg" class="img-fluid">
+		</div>
+		<div class="col-lg-6">
+			<h2>Flávio de Queiroz Pasquetti</h2>
+			<p> Brazilian, Single, 23 years</p>
+			<p> Street Francisca Sáles, Freguesia</p> 
+			<p>(21) 97954-9115</p> 
+			<p> fqpasquetti@poli.ufrj.br</p>
+			<br>
+		</div>
+		<div class="col-lg-12" align="left">
+			<h3 align = "center">Academic/Education Background</h3>
+			<hr> 
+			<p> Naval Engineering at Universidade Federal do Rio de Janeiro (UFRJ) - 2016/2021</p>
+			<h3 align = "center">Extracurricular activities and Others</h3>
+			<hr>
+			<p>Multiphysics Computer Simulation - ESSS - 2020</p>
+			<p>Minerva Baja Competition Team, team dedicated to the design and manufacture of Off-Road vehicles - 2018/2019</p>
+			<p>Introduction to Simulation - ESSS - 2019</p>
+			<p>Data Science: Visualizing data with Python - UDEMY - 2019</p>
+			<p>Project Management - Fundação Bradesco - 2017</p>
+			<p>Software Development Process - Fundação Bradesco - 2017</p>
+			<hr>
+			<p>Programming Languages: C++, Fortran, Python and HTML/CSS</p>
+			<p>Proficiency in Excel/VBA, ANSYS FLUENT, ANSYS APDL, CAD TOOLS</p>
+			<p>Advanced English</p>
+			<br>	
+			<h3 align = "center">Professional background</h3>
+			<hr>
+			<h5>PROMEC - 2020/-</h5>
+			<p>mimimi</p>
+			<h5>LAMCE/COPPE - 2019/2020</h5>
+			<p>Active participation in the elaboration of simulation software using the Finite Element method for a project with Petrobras. Creation of mesh generation code using bathymetric data, implementation of a method for applying the moment in element, adjustments in explicit solution code, among others. In addition to the generation and analysis of comparative simulations between the software under development and Ansys.</p>
+			<h5>MAKER FACTORY - 2018/2019</h5>
+			<p>Acting in the definition and optimization of parameters in CAD models related to 3D printing in small to medium-sized machines, using the Fusion 360 software, CURE, Meshmixer and others. And handling of additive manufacturing equipment.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+	</div>
+</div>
+</div>
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding" id="contact">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2>Connections</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a target="_blank" href="mailto:fqpasquetti@poli.ufrj.br"><i class="fa fa-envelope"></i></a>
+		<a target="_blank" href="https://www.instagram.com/fpasquetti/"><i class="fab fa-instagram"></i></a>
+		<a target="_blank" href="https://www.linkedin.com/in/flavio-queiroz-pasquetti-7212b55a"><i class="fab fa-linkedin"></i></a>
+	</div>
+</div>
+</div>
+
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center"> 
+	<div class="col-md-12">
+		<img src="img/logo_white.png">
+		<hr class="light">
+		<p>Phone: 21 97954-9115</p>
+		<p>Email: fqpasquetti@poli.ufrj.br</p>
+		<p>Rio de Janeiro, Brazil</p>
+		
+	</div>
+
+
+	<div class="col-12">
+		<hr class="light">
+		<h5>All work is © 2018 – 2020 by Flávio Pasquetti</h5>
+	</div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
