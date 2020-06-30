@@ -4,51 +4,44 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>teste</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-        </div>
+<nav class="navbar navbar-dark sticky-top">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
+
+
+	<a class="navbar-brand" href="#"><img src="img/logo_white.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	
+	
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav_item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav_item">
+				<a class="nav-link" href="#projects">Projects</a>
+			</li>
+			<li class="nav_item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav_item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
 </nav>
-
 
 <!-- Image Slider -->
 <div id="slides" class="carousel slide" data-ride="carousel">
@@ -109,54 +102,54 @@
 </figure>
 
 <!--- Saiba Mais -->
-<a data-toggle="collapse" href="#emoji"><button class="fun">Curriculum</button></a>
-<div id="emoji" class="collapse">
-<div class="container-fluid padding">
-<div class="row text-center">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Curriculum</button>
+<div id="collapseExample" class="collapse">
 	<div class="container-fluid padding">
-	<div class="row padding"> 
-		<div class="col-lg-6">
-			<img src="img/curriculo.jpg" class="img-fluid">
-		</div>
-		<div class="col-lg-6">
-			<h2>Flávio de Queiroz Pasquetti</h2>
-			<p> Brazilian, Single, 23 years</p>
-			<p> Street Francisca Sáles, Freguesia</p> 
-			<p>(21) 97954-9115</p> 
-			<p> fqpasquetti@poli.ufrj.br</p>
-			<br>
-		</div>
-		<div class="col-lg-12" align="left">
-			<h3 align = "center">Academic/Education Background</h3>
-			<hr> 
-			<p> Naval Engineering at Universidade Federal do Rio de Janeiro (UFRJ) - 2016/2021</p>
-			<h3 align = "center">Extracurricular activities and Others</h3>
-			<hr>
-			<p>Multiphysics Computer Simulation - ESSS - 2020</p>
-			<p>Minerva Baja Competition Team, team dedicated to the design and manufacture of Off-Road vehicles - 2018/2019</p>
-			<p>Introduction to Simulation - ESSS - 2019</p>
-			<p>Data Science: Visualizing data with Python - UDEMY - 2019</p>
-			<p>Project Management - Fundação Bradesco - 2017</p>
-			<p>Software Development Process - Fundação Bradesco - 2017</p>
-			<hr>
-			<p>Programming Languages: C++, Fortran, Python and HTML/CSS</p>
-			<p>Proficiency in Excel/VBA, ANSYS FLUENT, ANSYS APDL, CAD TOOLS</p>
-			<p>Advanced English</p>
-			<br>	
-			<h3 align = "center">Professional background</h3>
-			<hr>
-			<h5>PROMEC - 2020/-</h5>
-			<p>mimimi</p>
-			<h5>LAMCE/COPPE - 2019/2020</h5>
-			<p>Active participation in the elaboration of simulation software using the Finite Element method for a project with Petrobras. Creation of mesh generation code using bathymetric data, implementation of a method for applying the moment in element, adjustments in explicit solution code, among others. In addition to the generation and analysis of comparative simulations between the software under development and Ansys.</p>
-			<h5>MAKER FACTORY - 2018/2019</h5>
-			<p>Acting in the definition and optimization of parameters in CAD models related to 3D printing in small to medium-sized machines, using the Fusion 360 software, CURE, Meshmixer and others. And handling of additive manufacturing equipment.</p>
+		<div class="row text-center">
+			<div class="container-fluid padding">
+			<div class="row padding"> 
+				<div class="col-lg-6">
+					<img src="img/curriculo.jpg" class="img-fluid">
+				</div>
+				<div class="col-lg-6">
+					<h2>Flávio de Queiroz Pasquetti</h2>
+					<p> Brazilian, Single, 23 years</p>
+					<p> Street Francisca Sáles, Freguesia</p> 
+					<p>(21) 97954-9115</p> 
+					<p> fqpasquetti@poli.ufrj.br</p>
+					<br>
+				</div>
+				<div class="col-lg-12" align="left">
+					<h3 align = "center">Academic/Education Background</h3>
+					<hr> 
+					<p> Naval Engineering at Universidade Federal do Rio de Janeiro (UFRJ) - 2016/2021</p>
+					<h3 align = "center">Extracurricular activities and Others</h3>
+					<hr>
+					<p>Multiphysics Computer Simulation - ESSS - 2020</p>
+					<p>Minerva Baja Competition Team, team dedicated to the design and manufacture of Off-Road vehicles - 2018/2019</p>
+					<p>Introduction to Simulation - ESSS - 2019</p>
+					<p>Data Science: Visualizing data with Python - UDEMY - 2019</p>
+					<p>Project Management - Fundação Bradesco - 2017</p>
+					<p>Software Development Process - Fundação Bradesco - 2017</p>
+					<hr>
+					<p>Programming Languages: C++, Fortran, Python and HTML/CSS</p>
+					<p>Proficiency in Excel/VBA, ANSYS FLUENT, ANSYS APDL, CAD TOOLS</p>
+					<p>Advanced English</p>
+					<br>	
+					<h3 align = "center">Professional background</h3>
+					<hr>
+					<h5>PROMEC - 2020/-</h5>
+					<p>mimimi</p>
+					<h5>LAMCE/COPPE - 2019/2020</h5>
+					<p>Active participation in the elaboration of simulation software using the Finite Element method for a project with Petrobras. Creation of mesh generation code using bathymetric data, implementation of a method for applying the moment in element, adjustments in explicit solution code, among others. In addition to the generation and analysis of comparative simulations between the software under development and Ansys.</p>
+					<h5>MAKER FACTORY - 2018/2019</h5>
+					<p>Acting in the definition and optimization of parameters in CAD models related to 3D printing in small to medium-sized machines, using the Fusion 360 software, CURE, Meshmixer and others. And handling of additive manufacturing equipment.</p>
+				</div>
+			</div>
+			<hr class="my-4">
+			</div>
 		</div>
 	</div>
-	<hr class="my-4">
-	</div>
-</div>
-</div>
 </div>
 
 <!--- Connect -->
