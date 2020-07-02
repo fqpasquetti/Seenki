@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portifólio Flávio</title>
+	<title>Dinâmica de Estruturas Flutuantes</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+	<link href="style_project.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,13 +22,7 @@
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav_item active">
-				<a class="nav-link" href="#">Home</a>
-			</li>
-			<li class="nav_item">
-				<a class="nav-link" href="#projects">Projects</a>
-			</li>
-			<li class="nav_item">
-				<a class="nav-link" href="#about">About</a>
+				<a class="nav-link" href="index.html">Home</a>
 			</li>
 			<li class="nav_item">
 				<a class="nav-link" href="#contact">Contact</a>
@@ -37,94 +31,40 @@
 	</div>
 </nav>
 
-<!-- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
+<!-- Doc Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel" data-interval="0">
 <ul class="carousel-indicators">
 	<li data-target="#slides" data-slide-to="0" class="active"></li>
+	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
 </ul>
 <div class="carousel-inner">
 	<div class="carousel-item active">
-		<img src="img/header.jpg">
-		<div class="carousel-caption col-5">
-			<h1 class="display-2">Engineering Programming And Curiosity</h1>
-			<h3></h3>
-		</div>
-	</div>
-</div>
-</div>
-
-
-
-
-<!--- Cards --> 
-<div class="container-fluid padding" id="projects"> 
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">PROJECTS</h1>
-	</div>
-	<hr>
-</div>
-</div>
-
-<div class="container-fluid ">
-<div class="row ">
-	<div class="col-md-4">
-		<a href="base_project.html">
-		<div class="card">
-			<img class="card-img-top" src="img/projeto1.png">
-			<div class="card-body">
-				<h4 class="card-title">Dynamics of Floating Structures</h4>
-				<p class="card-text"> Modeling and Simulation of the Dynamics of Buoys Anchored under the effect of waves</p>
-				<p class="card-text"> ANSYS APDL and Excel </p>
+		<div class="row padding"> 
+			<h1 class="display-2 col-lg-12" align="center">Dinâmica de Estruturas Flutuantes</h1>
+			<div class="col-lg-6" align="justify">
+				<p>Esse conteúdo se refere ao estudo da dinâmica de corpos flutuantes sob o efeito de ondas.</p>	
+				<p>Para realizar esse estudo inicialmente utilizaremos um corpo semelhante a uma Spar-Buoy. Spar-Buoys são estruturas offshore flutuantes, usadas nas diversas etapas de produção em águas profundas como: perfuração, produção, processamento e armazenamento de óleo e gás.</p> 
+				<p>Com um casco cilíndrico com dimensões verticais que ultrapassam as centenas de metros e diâmetro com algumas dezena, elas apresentam uma configuração que possuem algumas vantagens intrínsecas, como:</p> 
+				<ul>
+					<li>Simplicidade estrutural</li>
+					<li>Excelentes características dinâmicas, mesmo quando exposta à condições ambientais severas, devido aos seus longos períodos naturais</li>
+					<li>Baixo custo de fabricação </li>
+					<li>Aplicabilidade a uma grande faixa de profundidades de lâmina d ́água. </li>
+				</ul>
+				<p>Definido o que queremos fazer, precisamos escolher a ferramenta que vamos utilizar para colocar isso em prática. </p> 
+				<p>E a ferramenta escolhida foi o ANSYS Mechanical APDL, por nenhum motivo específico, só porque eu queria aprender a mexer nela mesmo :D</p> 
+				<p>Enfim, agora podemos começar.</p> 
+			</div>
+			
+			<div class="col-lg-6" align="center">
+				<img src="img/projeto1.png">
+				<img src="img/projeto1.png">
 			</div>
 		</div>
-		</a>
 	</div>
-	<div class="col-md-4">
-		<a href="base_project.html">
-		<div class="card">
-			<img class="card-img-top" src="img/projeto1.png">
-			<div class="card-body">
-				<h4 class="card-title">Dinâmica de Estruturas Flutuantes</h4>
-				<p class="card-text"> Modelagem e Simulação da Dinâmica de Bóias Ancoradas sob efeito de ondas</p>
-				<p class="card-text"> ANSYS APDL and Excel </p>
-			</div>
-		</div>
-		</a>
-	</div>
-	<div class="col-md-4">
-		<a href="base_project.html">
-		<div class="card">
-			<img class="card-img-top" src="img/projeto1.png">
-			<div class="card-body">
-				<h4 class="card-title">Dinâmica de Estruturas Flutuantes</h4>
-				<p class="card-text"> Modelagem e Simulação da Dinâmica de Bóias Ancoradas sob efeito de ondas</p>
-				<p class="card-text"> ANSYS APDL and Excel </p>
-			</div>
-		</div>
-		</a>
-	</div>
-</div>
-</div>
-
-
-
-<hr class="my-4">
-<!--- Fixed Background --> 
-<figure> 
-	<div class="fixed-wrap" id="about">
-		<div id="fixed">
-		</div>
-	</div>
-</figure>
-
-<!--- Saiba Mais -->
-<button class="fun" data-toggle="collapse" data-target="#curriculum">Curriculum</button>
-<div id="curriculum" class="collapse">
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="container-fluid padding">
-			<div class="row padding"> 
+	<div class="carousel-item">
+		<div class="row padding"> 
 				<div class="col-lg-6">
 					<img src="img/curriculo.jpg" class="img-fluid">
 				</div>
@@ -163,48 +103,14 @@
 					<p>Acting in the definition and optimization of parameters in CAD models related to 3D printing in small to medium-sized machines, using the Fusion 360 software, CURE, Meshmixer and others. And handling of additive manufacturing equipment.</p>
 				</div>
 			</div>
-			<hr class="my-4">
-			</div>
-		</div>
 	</div>
-</div>
-
-<!--- Connect -->
-<div class="container-fluid padding" id="contact">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Connections</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a target="_blank" href="mailto:fqpasquetti@poli.ufrj.br"><i class="fa fa-envelope"></i></a>
-		<a target="_blank" href="https://www.instagram.com/fpasquetti/"><i class="fab fa-instagram"></i></a>
-		<a target="_blank" href="https://www.linkedin.com/in/flavio-queiroz-pasquetti-7212b55a"><i class="fab fa-linkedin"></i></a>
+	<div class="carousel-item">
+		<h1 class="display-2">Engineering Programming And Curiosity</h1>
 	</div>
 </div>
 </div>
 
 
-<!--- Footer -->
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center"> 
-	<div class="col-md-12">
-		<img src="img/logo_white.png">
-		<hr class="light">
-		<p>Phone: 21 97954-9115</p>
-		<p>Email: fqpasquetti@poli.ufrj.br</p>
-		<p>Rio de Janeiro, Brazil</p>
-		
-	</div>
-
-
-	<div class="col-12">
-		<hr class="light">
-		<h5>All work is © 2018 – 2020 by Flávio Pasquetti</h5>
-	</div>
-</div>
-</div>
-</footer>
 
 </body>
 </html>
