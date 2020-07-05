@@ -101,6 +101,12 @@ a:hover  {
 	backface-visibility: visible;
 }
 
+.carousel-item img{
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
 .carousel-indicators {
 	display: none;
 }
