@@ -111,6 +111,11 @@ a:hover  {
 	display: none;
 }
 
+#slides2 .carousel-indicators {
+	display: flex;
+	top:85%;
+}
+
 .btn-primary {
 	background-color: #4F4F4F;
 	border: 1px solid black;
