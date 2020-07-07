@@ -107,13 +107,13 @@ a:hover  {
 	padding-top: 5px;
 }
 
-.carousel-indicators {
+#slides .carousel-indicators {
 	display: none;
 }
 
 #slides2 .carousel-indicators {
 	display: flex;
-	top:85%;
+	top:0%;
 }
 
 .btn-primary {
