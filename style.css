@@ -32,12 +32,10 @@ html,body {
 
 a {
 	text-decoration: none;
-	color: black;
 }
 
 a:link  {
 	text-decoration: none;
-	color: black;
 }
 a:hover  {
 	text-decoration: none;	
@@ -96,6 +94,14 @@ a:hover  {
 	text-transform: uppercase;
 	text-shadow: 1px 1px 15px #000;
 	text-align: left;
+}
+
+#slides h4 {
+	color: black;
+}
+
+#slides p {
+	color: black;
 }
 
 .carousel-item{
@@ -191,10 +197,6 @@ a:hover  {
 .collapse img {
 	width: 30%;
 	border-radius: 50%;
-}
-
-.summary {
-	
 }
 
 
