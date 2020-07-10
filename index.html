@@ -53,6 +53,7 @@
 <ul class="carousel-indicators">
 	<li data-target="#slides" data-slide-to="0" class="active"></li>
 	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
 </ul>
 <div class="carousel-inner">
 	<div class="carousel-item active">
@@ -67,7 +68,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
-					<a class="carousel-control" href="#slides" data-slide-to="1">
+					<a class="carousel-control" href="#slides" data-slide-to="2">
 					<div class="square">
 						<div class="card-body">
 							<h4 class="card-title">Mesh Generator</h4>
@@ -77,14 +78,49 @@
 					</div>
 					</a>
 				</div>
+				
+				<div class="col-md-6">
+					<a class="carousel-control" href="#slides" data-slide-to="1">
+					<div class="square">
+						<div class="card-body">
+							<h4 class="card-title">Dynamics of Floating Structures</h4>
+							<p class="card-text"> Modeling and Simulation of the Dynamics of Buoys Anchored under the effect of waves</p>
+							<p class="card-text"> ANSYS APDL and Excel </p>
+						</div>
+					</div>
+					</a>
+				</div>
 			</div>
 		</div>
+		
 	</div>
 
 	<div class="carousel-item">
 		<div class="container-fluid padding">
 		<div class="row padding"> 
-			<a class="col-md-1 carousel-control" href="#slides" data-slide-to="0"><div id="intern" class="square" align="center"><p><<<</p></div></a>
+			<a class="col-md-1 carousel-control" href="#slides" data-slide-to="0"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
+			<h3 class="col-md-10" align="center">Dynamics of Floating Structures</h3>
+			<div class="col-md-6" align="justify">
+				<p>The starting point for carrying out this project was the need to create meshes from bathymetric data with a variable depth defined by the user, so that it was possible to study the influence of relief on the amplification of earthquakes, from simulations in FEM .</p>	
+				<p>In addition to the depth value, more user-adjustable parameters were defined for better mesh generation, such as: element size of the upper and lower extremity layers, horizontal element sizes, number of vertical layers and application or not of material properties from external file.</p>
+				<p>From these entries, files containing the mesh geometry and files containing complementary information for analysis, such as gradient, angulation and height of the upper surface, as shown in the images, are returned to the user.</p>
+				<p>This program was carried out in 2019 while I was interning at the LAMCE / COPPE laboratory at UFRJ, and was one of the stages of a project in partnership with Petrobras.</p>
+			</div>
+			
+			<div class="col-md-6" align="center">
+				<video muted="true" loop="true" autoplay="true">
+					<source src="vid/db.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="carousel-item">
+		<div class="container-fluid padding">
+		<div class="row padding"> 
+			<a class="col-md-1 carousel-control" href="#slides" data-slide-to="0"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
 			<h3 class="col-md-10" align="center">Mesh Generator</h3>
 			<div class="col-md-6" align="justify">
 				<p>The starting point for carrying out this project was the need to create meshes from bathymetric data with a variable depth defined by the user, so that it was possible to study the influence of relief on the amplification of earthquakes, from simulations in FEM .</p>	

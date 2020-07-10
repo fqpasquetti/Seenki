@@ -20,6 +20,11 @@ html,body {
 	cursor:pointer;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.9);
 	transition: all 0.3s linear;
+	height: 100%;
+}
+
+video {
+	width:100%;
 }
 
 .square:hover {
@@ -103,6 +108,7 @@ a:hover  {
 #slides p {
 	color: black;
 }
+
 
 .carousel-item{
 	transition: -webkit-transform 0.5s ease;
