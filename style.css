@@ -23,7 +23,7 @@ html,body {
 	height: 100%;
 }
 
-video {
+.carousel-item video {
 	width:100%;
 }
 
