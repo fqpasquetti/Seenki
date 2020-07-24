@@ -194,16 +194,19 @@ a:hover  {
 .fa-envelope:hover,
 .fa-instagram:hover,
 .fa-linkedin:hover{
-	color: #d5d5d5;
+	opacity: 0.5;
+	filter: contrast(200%);
+	filter: grayscale(90%);
 }
 
 .image {
-	transition: all 0.5s linear;
 	width: 10%;
 }
 
 .image:hover{
 	opacity: 0.5;
+	filter: contrast(200%);
+	filter: grayscale(90%);
 }
 
 .collapse img {
