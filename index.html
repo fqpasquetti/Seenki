@@ -28,10 +28,7 @@
 				<a class="nav-link" href="#projects">Projects</a>
 			</li>
 			<li class="nav_item">
-				<a class="nav-link" href="#projects">Trajectory</a>
-			</li>
-			<li class="nav_item">
-				<a class="nav-link" href="#about">About</a>
+				<a class="nav-link" href="#Trajectory">Trajectory</a>
 			</li>
 			<li class="nav_item">
 				<a class="nav-link" href="#contact">Contact</a>
@@ -50,16 +47,23 @@
 
 
 <!--- Cards --> 
+<script>
+function myFunction($input) {
+  document.getElementById("cards-painel").style.display = 'none';
+  document.getElementById($input).style.display = 'block';
+}
+</script>
+<script>
+function myFunction2($input) {
+  document.getElementById("cards-painel").style.display = 'block';
+  document.getElementById($input).style.display = 'none';
+}
+</script>
+
 
 <div id="projects">
-<div id="slides" class="carousel slide" data-ride="carousel" data-interval="0">
-<ul class="carousel-indicators">
-	<li data-target="#slides" data-slide-to="0" class="active"></li>
-	<li data-target="#slides" data-slide-to="1"></li>
-	<li data-target="#slides" data-slide-to="2"></li>
-</ul>
-<div class="carousel-inner">
-	<div class="carousel-item active">
+
+	<div id="cards-painel">
 		<div class="container-fluid padding" id="projects"> 
 			<div class="row welcome text-center">
 				<div class="col-12">
@@ -71,37 +75,38 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
-					<a class="carousel-control" href="#slides" data-slide-to="2">
+					<a href="#void" onclick="myFunction('mesh-generator');">
 					<div class="square">
 						<div class="card-body">
 							<h4 class="card-title">Mesh Generator</h4>
 							<p class="card-text"> Mesh generator for studying earthquakes on the seabed</p>
-							<p class="card-text"> FORTRAN and Python </p>
+							<p class="card-text2"> LAMCE/COPPE - 2019 </p>
 						</div>
 					</div>
 					</a>
 				</div>
 				
 				<div class="col-md-6">
-					<a class="carousel-control" href="#slides" data-slide-to="1">
+					<a href="#void" onclick="myFunction('dynamics-of-floating-structures');">
 					<div class="square">
 						<div class="card-body">
 							<h4 class="card-title">Dynamics of Floating Structures</h4>
 							<p class="card-text"> Modeling and Simulation of the Dynamics of Buoys Anchored under the effect of waves</p>
-							<p class="card-text"> ANSYS APDL and Excel </p>
+							<p class="card-text2"> LAMCE/COPPE - 2019 </p>
 						</div>
 					</div>
 					</a>
 				</div>
+				
 			</div>
 		</div>
 		
 	</div>
 
-	<div class="carousel-item">
+	<div id="dynamics-of-floating-structures" style="display:none">
 		<div class="container-fluid padding">
 		<div class="row padding"> 
-			<a class="col-md-1 carousel-control" href="#slides" data-slide-to="0"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
+			<a class="col-md-1" href="#void" onclick="myFunction2('dynamics-of-floating-structures');"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
 			<h3 class="col-md-10" align="center">Dynamics of Floating Structures</h3>
 			<div class="col-md-6" align="justify">
 				<p>This work aimed at the initial study of the dynamics of floating structures on wave effects, serving as a basis for more complex studies after this one, as an example, the study on stability of offshore wind turbines carried out by LAMCE / COPPE.</p>	
@@ -118,10 +123,10 @@
 	</div>
 
 
-	<div class="carousel-item">
+	<div id="mesh-generator" style="display:none">
 		<div class="container-fluid padding">
 		<div class="row padding"> 
-			<a class="col-md-1 carousel-control" href="#slides" data-slide-to="0"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
+			<a class="col-md-1" href="#void" onclick="myFunction2('mesh-generator');"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
 			<h3 class="col-md-10" align="center">Mesh Generator</h3>
 			<div class="col-md-6" align="justify">
 				<p>The starting point for carrying out this project was the need to create meshes from bathymetric data with a variable depth defined by the user, so that it was possible to study the influence of relief on the amplification of earthquakes, from simulations in FEM .</p>	
@@ -131,13 +136,7 @@
 			</div>
 			
 			<div class="col-md-6" align="center">
-			
 				<div id="slides2" class="carousel slide" data-ride="carousel">
-					<ul class="carousel-indicators">
-						<li data-target="#slides2" data-slide-to="0" class="active"></li>
-						<li data-target="#slides2" data-slide-to="1"></li>
-						<li data-target="#slides2" data-slide-to="2"></li>
-					</ul>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img src="img/GM_2.png">
@@ -152,32 +151,45 @@
 							<p>Structured Mesh Generated from Bathymetry</p>
 						</div>
 					</div>
+					<a class="carousel-control-next" href="#slides2" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					<a class="carousel-control-prev" href="#slides2" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
 				</div>
 		
 			</div>
 		</div>
 		</div>
 	</div>
+	
 </div>
-</div>
-</div>
 
 
+<hr style="margin-bottom: 0px;">
 
-<!--- Experiencias --> 
-<hr class="my-4">
+<!--- Fixed Background --> 
+<figure style="max-height:40%"> 
+	<div class="fixed-wrap" id="about">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
 
-<div class="container-fluid" id="contact">
+<!--- Experiencias -->
+
+<div class="container-fluid" id="Trajectory">
 <div class="row text-center">
-	<div class="col-12" style="padding-top: 0px;">
+	<div class="col-12" style="padding-top: 0px; margin-top: 12px;">
 		<h2>Trajectory</h2>
 	</div>
-	<div class="col-md-12 social">
+	<div class="col-md-12 social" style="margin-bottom: 24px;">
 		<a target="_blank" href="http://www.minervabaja.poli.ufrj.br"><img src="img/baja_logo.png" class="image"></a>
 		<a target="_blank" href="https://www.makerfactory.com.br"><img src="img/maker_factory.png" class="image"></a>
 		<a target="_blank" href="http://www.lamce.coppe.ufrj.br"><img src="img/lamce_coppe.png" class="image"></a>
-	</div>
-	<div class="col-md-12 social">
 		<a target="_blank" href="https://www.promecgroup.com"><img src="img/PROMEC.png" class="image"></a>
 	</div>
 </div>
@@ -185,18 +197,8 @@
 
 
 
-
-<hr class="my-4">
-<!--- Fixed Background --> 
-<figure> 
-	<div class="fixed-wrap" id="about">
-		<div id="fixed">
-		</div>
-	</div>
-</figure>
-
 <!--- Saiba Mais -->
-<button class="fun" data-toggle="collapse" data-target="#curriculum">Curriculum</button>
+<button class="btn" data-toggle="collapse" data-target="#curriculum">Curriculum</button>
 <div id="curriculum" class="collapse">
 	<div class="container-fluid padding">
 		<div class="row text-center">
@@ -240,24 +242,9 @@
 					<p>Acting in the definition and optimization of parameters in CAD models related to 3D printing in small to medium-sized machines, using the Fusion 360 software, CURE, Meshmixer and others. And handling of additive manufacturing equipment.</p>
 				</div>
 			</div>
-			<hr class="my-4">
 			</div>
 		</div>
 	</div>
-</div>
-
-<!--- Connect -->
-<div class="container-fluid padding" id="contact">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Connections</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a target="_blank" href="mailto:fqpasquetti@poli.ufrj.br"><i class="fa fa-envelope"></i></a>
-		<a target="_blank" href="https://www.instagram.com/fpasquetti/"><i class="fab fa-instagram"></i></a>
-		<a target="_blank" href="https://www.linkedin.com/in/flavio-queiroz-pasquetti-7212b55a"><i class="fab fa-linkedin"></i></a>
-	</div>
-</div>
 </div>
 
 
@@ -265,7 +252,7 @@
 <footer>
 <div class="container-fluid padding">
 <div class="row text-center"> 
-	<div class="col-md-12">
+	<div class="col-md-6">
 		<img src="img/logo_white.png">
 		<hr class="light">
 		<p>Phone: 21 97954-9115</p>
@@ -273,7 +260,14 @@
 		<p>Rio de Janeiro, Brazil</p>
 		
 	</div>
-
+	
+	<div class="col-md-6 social padding" id="contact">
+		<p>Contact</p>
+		<hr class="light">
+		<a target="_blank" href="mailto:fqpasquetti@poli.ufrj.br"><i class="fa fa-envelope"></i></a>
+		<a target="_blank" href="https://www.instagram.com/fpasquetti/"><i class="fab fa-instagram"></i></a>
+		<a target="_blank" href="https://www.linkedin.com/in/flavio-queiroz-pasquetti-7212b55a"><i class="fab fa-linkedin"></i></a>
+	</div>
 
 	<div class="col-12">
 		<hr class="light">
