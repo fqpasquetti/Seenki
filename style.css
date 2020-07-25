@@ -102,9 +102,9 @@ a, a:link, a:hover {
 
 
 .carousel-item{
-	transition: -webkit-transform 0.5s ease;
-	transition: transform 0.5s ease;
-	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.8s ease;
+	transition: transform 0.8s ease;
+	transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 	-webkit-backface-visibility: visible;
 	backface-visibility: visible;
 }
@@ -169,6 +169,8 @@ a, a:link, a:hover {
 .fa-envelope {
 	color: #d5d5d5;
 }
+
+
 
 .fa-envelope:hover,
 .fa-instagram:hover,
