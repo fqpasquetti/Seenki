@@ -211,7 +211,7 @@ footer {
 	height: 100%;
 }
 
-#projects .card-title {
+#projects {
 	text-align: center;
 }
 
@@ -222,7 +222,6 @@ footer {
 #projects .card-text {
 	height: 50%;
 	margin: 0px;
-	text-align: justify;
 }
 
 hr.light {
