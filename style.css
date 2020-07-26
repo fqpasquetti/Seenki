@@ -37,6 +37,10 @@ a, a:link, a:hover {
 	color: black;
 }
 
+nav img {
+	height: 40px;
+	margin-left: 20px;
+}
 
 .navbar{
 	padding: .1rem;
