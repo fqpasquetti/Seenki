@@ -76,36 +76,12 @@ function myFunction2($input) {
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
-					<a href="#void" onclick="myFunction('mesh-generator');">
-					<div class="square">
-						<div class="card-body">
-							<h4 class="card-title">Mesh Generator</h4>
-							<p class="card-text"> Mesh generator for studying earthquakes on the seabed</p>
-							<p class="card-text2"> LAMCE/COPPE - 2019 </p>
-						</div>
-					</div>
-					</a>
-				</div>
-				
-				<div class="col-md-6">
 					<a href="#void" onclick="myFunction('femwave');">
 					<div class="square">
 						<div class="card-body">
 							<h4 class="card-title">Topographic Factor Analysis of Undersea Relief</h4>
 							<p class="card-text"> Study of the topographical factor analysis of undersea relief via seismic analysis in its own program</p>
 							<p class="card-text2"> LAMCE/COPPE - 2018/2019 </p>
-						</div>
-					</div>
-					</a>
-				</div>
-				
-				<div class="col-md-6">
-					<a href="#void" onclick="myFunction('dynamics-of-floating-structures');">
-					<div class="square">
-						<div class="card-body">
-							<h4 class="card-title">Dynamics of Floating Structures</h4>
-							<p class="card-text"> Modeling and Simulation of the Dynamics of Buoys Anchored under the effect of waves</p>
-							<p class="card-text2"> LAMCE/COPPE - 2019 </p>
 						</div>
 					</div>
 					</a>
@@ -128,26 +104,6 @@ function myFunction2($input) {
 		
 	</div>
 
-	<div id="dynamics-of-floating-structures" style="display:none">
-		<div class="container-fluid padding">
-		<div class="row padding"> 
-			<a class="col-md-1" href="#void" onclick="myFunction2('dynamics-of-floating-structures');"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
-			<h3 class="col-md-10" align="center">Dynamics of Floating Structures</h3>
-			<div class="col-md-6" align="justify">
-				<p>This work aimed at the initial study of the dynamics of floating structures on wave effects, serving as a basis for more complex studies after this one, as an example, the study on stability of offshore wind turbines carried out by LAMCE / COPPE.</p>	
-				<p>Such simulation was done with ANSYS MECHANICAL APDL, where the desired parameters were introduced and the solver was modified to calculate the pressures exerted by the waves on the floating structure. These calculations were introduced based on Airy's Theory, a more elementary approach to the theory of surface waves of gravity, also known as linear theory or small amplitude theory. Developed by Airy in 1845.</p>
-			</div>
-			
-			<div class="col-md-6" align="center">
-				<video muted="true" loop="true" autoplay="true" style="width: 100%">
-					<source src="vid/db.mp4" type="video/mp4">
-				</video>
-			</div>
-		</div>
-		</div>
-	</div>
-	
-
 	<div id="femwave" style="display:none">
 		<div class="container-fluid padding">
 		
@@ -168,29 +124,16 @@ function myFunction2($input) {
 				<p style="color:white"> Topographical factor along the spread of the earthquake </p> 	
 			</div>
 			
-			<div class="col-md-12" align="justify">
-				<p>The project was carried out by a team of Scientific Initiation students from the Lamce / Coppe Laboratory with the assistance of the coordinator, in order to analyze the influence of the relief of the seabed on the amplification of earthquakes. </p>	
-				<p>My participation was in the implementation of a large part of the solver based on the Finite Element method, analysis / comparison of results and compatibility of the program with the mesh generated for this project (an example of mesh can be seen on the "Mesh Generator" card)</p>
-			</div>
-		
-
-		</div>
-		</div>
-	</div>
-
-
-	<div id="mesh-generator" style="display:none">
-		<div class="container-fluid padding">
-		<div class="row padding"> 
-			<a class="col-md-1" href="#void" onclick="myFunction2('mesh-generator');"><div id="intern" class="square2" align="center"><p><<<</p></div></a>
-			<h3 class="col-md-10" align="center">Mesh Generator</h3>
-			<div class="col-md-6" align="justify">
-				<p>The starting point for carrying out this project was the need to create meshes from bathymetric data with a variable depth defined by the user, so that it was possible to study the influence of relief on the amplification of earthquakes, from simulations in FEM .</p>	
-				<p>In addition to the depth value, more user-adjustable parameters were defined for better mesh generation, such as: element size of the upper and lower extremity layers, horizontal element sizes, number of vertical layers and application or not of material properties from external file.</p>
+			<div class="col-md-6" align="justify" vertical-align="center">
+				<p>The starting point for the realization of this project was the need to create meshes from bathymetric data with variable depth defined by the user, so that it was possible to study the influence of relief on the amplification of earthquakes, from simulations in FEM.</p>
+				<p>In addition to the depth value, parameters more adjustable by the user were defined for better meshing, such as: element size of the upper and lower extremity layers, sizes of the horizontal elements, number of vertical layers and application or not of properties material from the external file.</p>
 				<p>From these entries, files containing the mesh geometry and files containing complementary information for analysis, such as gradient, angulation and height of the upper surface, as shown in the images, are returned to the user.</p>
-				<p>This program was carried out in 2019 entirely by me, while I was interning at the LAMCE / COPPE laboratory at UFRJ, and was one of the stages of a project in partnership with Petrobras.</p>
+				<p>After this stage of mesh generation I was directed to the development of the solver and the analysis / comparison of the results obtained.</p>
+				<p>The solver used the finite element method to solve the problem. For this, we use the Galerkin method, together with the Thomas algorithm and using a linear interpolation function to assemble the finite element method itself, without the need for commercial programs. However, to validate and test some results, programs such as Ansys and analytical development were used.</p>
+				<p>The project was carried out by a team of two Scientific Initiation students from the LAMCE / COPPE Laboratory with the assistance of the coordinator, with the aim of analyzing the influence of the relief of the seabed on the amplification of earthquakes.</p>
+				<p>At the end of the project, I presented the work at the first LAMCE / COPPE workshop.</p>
 			</div>
-			
+						
 			<div class="col-md-6" align="center">
 				<div id="slides2" class="carousel slide" data-ride="carousel" data-interval="4000">
 					<div class="carousel-inner">
@@ -206,6 +149,10 @@ function myFunction2($input) {
 							<img src="img/GM_3.png">
 							<p>Structured Mesh Generated from Bathymetry</p>
 						</div>
+						<div class="carousel-item">
+							<img src="img/workshop.jpg">
+							<p>Presentation of the First Workshop LAMCE/COPPE</p>
+						</div>
 					</div>
 					<a class="carousel-control-next" href="#slides2" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -216,8 +163,7 @@ function myFunction2($input) {
 						<span class="sr-only">Previous</span>
 					</a>
 				</div>
-		
-			</div>
+			</div>	
 		</div>
 		</div>
 	</div>
